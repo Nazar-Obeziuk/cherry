@@ -699,6 +699,13 @@ footer .buttons {
   margin-top: 41px;
 }
 
+footer .buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
 .footer_green {
   width: 100%;
   transform: translateY(10px);
@@ -893,6 +900,7 @@ footer .buttons {
   footer button {
     font-size: 22px;
     line-height: 26px;
+    color: var(--black) !important;
   }
 
   .main__explore_action {
@@ -901,6 +909,13 @@ footer .buttons {
     justify-content: center;
     position: relative;
     margin-top: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  footer .buttons {
+    flex-direction: column;
+    gap: 20px;
   }
 }
 
@@ -944,11 +959,6 @@ footer .buttons {
 
   .main__time_section {
     padding: 80px 0;
-  }
-
-  footer .buttons {
-    flex-direction: column;
-    gap: 20px;
   }
 
   footer h2 {
