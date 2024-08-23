@@ -1,7 +1,9 @@
 // burger menu
 const burger = document.querySelector(".header__wrapper_burger");
 const burgerMenuBlock = document.querySelector(".header__mobile_block");
-const headerLinks = document.querySelectorAll(".header__item_link");
+const mobileHeaderLinks = document.querySelectorAll(
+  ".header__mobile_block .header__item_link"
+);
 
 burger.addEventListener("click", function () {
   this.classList.toggle("active");
@@ -14,7 +16,7 @@ burger.addEventListener("click", function () {
   }
 });
 
-headerLinks.forEach((headerLink) => {
+mobileHeaderLinks.forEach((headerLink) => {
   headerLink.addEventListener("click", function () {
     burger.classList.toggle("active");
     burgerMenuBlock.classList.toggle("active");
